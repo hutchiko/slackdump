@@ -119,7 +119,7 @@ func ParseURL(slackURL string) (*SlackLink, error) {
 //
 // > Your workspace URL can only contain lowercase letters, numbers and dashes
 // > (and must start with a letter or number).
-var slackURLRe = regexp.MustCompile(`^https:\/\/[a-zA-Z0-9]{1}[-\w]+\.slack\.com\/archives\/[A-Z]{1}[A-Z0-9]+(\/p(\d+))?$`)
+var slackURLRe = regexp.MustCompile(`^https:\/\/[a-zA-Z0-9]{1}[-\w]+(\.enterprise)?\.slack\.com\/archives\/[A-Z]{1}[A-Z0-9]+(\/p(\d+))?$`)
 
 // IsValidSlackURL returns true if the value looks like valid Slack URL, false
 // if not.
